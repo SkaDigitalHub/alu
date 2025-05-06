@@ -14,11 +14,11 @@
         }
         #invoice {
             flex-basis: 100%;
-            max-width: 320px;
+            max-width: 800px;
             margin: 30px auto;
             background-color: #fff;
             border-radius: 8px;
-            padding: 30px;
+            padding: 10px 20px;
             box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
         }
         .invoice-header {
@@ -82,7 +82,7 @@
             font-size: 14px;
         }
         table {
-            width: 300px;
+            width: 100%;
             border-collapse: collapse;
             margin-bottom: 15px;
         }
@@ -224,7 +224,7 @@
                 <p>Asofa New Station</p>
                 <p>Accra, Ghana</p>
                 <p>Phone: (+233) 0555 070 899</p>
-                <p>| Email: adinyinaaluminum@gmail.com</p>
+                <p>Email: adinyinaaluminum@gmail.com</p>
                 <p>WhatsApp: (+233)0555070899</p>
             </div><br><br>
             <div class="invoice-title">
@@ -243,7 +243,7 @@
             <div class="invoice-meta">
                 <h3>INVOICE DETAILS</h3>
                 <p>Date: <input type="date" id="date" value="2025-05-02" style="width: 150px;"></p>
-                <p>Invoice #: <input type="text" id="invoice-number" value="AAL-INV-2025E0001" style="width: 150px;"></p>
+                <p>Invoice #: <input type="text" id="invoice-number" value="AALINV2025E0001" style="width: 150px;"></p>
                 <p>Due Date: <input type="date" id="due-date" value="2025-05-16" style="width: 150px;"></p>
                 <p>Payment Terms: <input type="text" id="payment-terms" value="Cash" style="width: 150px;"></p>
             </div>
@@ -286,7 +286,7 @@
             <p style="text-align: center; color: #7f8c8d; font-size: 13px;">
                 Thank you for your business! Payment can be made via bank transfer or Mobile Money.<br>
                 <strong>Bank Details:</strong><br> 
-                <strong>Evans Sekyi  |  Momo Account #: 0555070899<br>  Ecobank(Barrier) #: 0987654321<br>
+                <strong>Evans Sekyi  |  Momo Account #: 0555070899<br>  Ecobank(Barrier) #: 0987654321</strong><br>
                 Payments must not delay.
             </p>
         </div>
@@ -312,7 +312,7 @@
             
             // Generate random invoice number
             const randomNum = Math.floor(Math.random() * 10000);
-            document.getElementById('invoice-number').value = `INV${today.getFullYear()}${String(today.getMonth() + 1).padStart(2, '0')}${randomNum}`;
+            document.getElementById('invoice-number').value = `AAL-INV-${today.getFullYear()}${String(today.getMonth() + 1).padStart(2, '0')}${randomNum}`;
             
             // Add initial event listeners
             initializeInvoice();
